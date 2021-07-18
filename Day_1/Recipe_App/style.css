@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Ubuntu', sans-serif;
+  margin: 0;
+  background-color: #F1DBD7;
+}
+
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #F1DBD7;
+}
+
+::-webkit-scrollbar-thumb {
+  /*改变滚动条滑轨相关的样式*/
+  border-radius: 10px;
+  background-color: rgb(240, 238, 239);
+}
+/* 移入鼠标效果 */
+
+::-webkit-scrollbar-thumb:hover {
+  border-radius: 10px;
+}
+
+
+.container {
+  width: 350px;
+  height: 570px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 1.5rem ;
+  background-color:#fff;
+  border-radius: 1.5rem;
+  position: relative;
+  overflow-y: overlay;
+}
+
+
+header {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1.2rem;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-right: 100px;
+  line-height: 2rem;
+}
+
+
+#search-box {
+  position: relative;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+#search-box input {
+  width: 100%;
+  height: 2.2rem;
+  border-radius: 1.5rem;
+  outline: none;
+  border: none;
+  padding: 0 20px;
+  background-color: rgb(241, 248, 250);
+}
+
+#search-box button {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+#search-box button svg {
+  height: 2.2rem;
+  line-height: 2.2rem;
+}
+
+
+#fav-food  {
+  width: 100%;
+  background-color: rgba(235, 243, 116, 0.1);
+  border-radius: 15px;
+  padding: 10px 0;;
+}
+
+#fav-food .title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 0 10px ;
+}
+
+#fav-food .title h4 {
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+#fav-food ul {
+  display: flex;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  overflow-x: hidden;
+  padding: 5px;
+}
+
+#fav-food ul li {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  list-style: none;
+  margin-right: 10px;
+}
+
+#fav-food ul li #close{
+  opacity: 0%;
+  position: absolute;
+  top: 0;
+  right: -5px;
+  transition: all.4s ease-in-out;
+  cursor: pointer;
+}
+
+#fav-food ul li:hover #close {
+  opacity: 100%;
+}
+
+#fav-food img {
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 20px 15px -10px;
+  transition: all .4s ease-in-out;
+}
+
+#fav-food img:hover {
+  transform: scale(1.1);
+}
+
+#fav-food span {
+  width: 65px;
+  text-align: center;
+  margin-top: 10px;
+  font-weight: 900;
+  font-size: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#recipe-list {
+  margin-top: 20px;
+}
+
+#recipe-list li {
+  list-style: none;
+  margin-bottom: 20px;
+  position: relative;
+  width: 100%;
+  border-radius: 20px;
+  padding-bottom: 10px;
+  box-shadow: rgba(50, 50, 93, 0.1) 0px 6px 12px -2px, 
+  rgba(0, 0, 0, 0.15) 0px 3px 7px -3px;
+}
+
+#recipe-list img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+  cursor: pointer;
+}
+
+#recipe-list .tag {
+  position: absolute;
+  top: 110px;
+  left: 1rem;
+  color: #fff;
+  /* font-weight: 700; */
+  font-style: italic;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  background: rgba( 255, 255, 255, 0.20 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 10px );
+  -webkit-backdrop-filter: blur( 16.0px );
+}
+
+#recipe-list .tag::before{
+  content: '';
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+#recipe-list .desc {
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: aliceblue; */
+}
+
+#recipe-list .desc span {
+  width: 80%;
+  height: 20px;
+  padding: 0 10px;
+  font-size: 14px;
+  font-weight: 900;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#recipe-list .desc svg {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+#recipe-detail {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0; 
+  background-color: rgba(111, 125, 131, 0.15);
+  transition: all .4s ease-in-out;
+  display: none;
+}
+
+#recipe-detail .detail-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 300px;
+  height: 450px;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  overflow: auto;
+}
+
+#recipe-detail .detail-container h3 {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+#recipe-detail .detail-container img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+#recipe-detail .detail-container p {
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 23px;
+  margin-bottom: 20px;
+}
+
+#recipe-detail .detail-container ul {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+#recipe-detail .detail-container ul li {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+#recipe-detail .detail-container svg {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+
