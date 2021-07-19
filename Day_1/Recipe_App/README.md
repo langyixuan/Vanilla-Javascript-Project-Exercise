@@ -17,8 +17,9 @@
 
 
 ### **页面展示**
-![test image size](https://github.com/langyixuan/Vanilla-Javascript-Project-Exercise/blob/master/Day_1/Recipe_App/img1.png){:width="200px"}
+<!-- ![test image size](https://github.com/langyixuan/Vanilla-Javascript-Project-Exercise/blob/master/Day_1/Recipe_App/img1.png){:width="200px"}
 
-![test image size](https://github.com/langyixuan/Vanilla-Javascript-Project-Exercise/blob/master/Day_1/Recipe_App/img2.png){:width="200px"}
-
+![test image size](https://github.com/langyixuan/Vanilla-Javascript-Project-Exercise/blob/master/Day_1/Recipe_App/img2.png){:width="200px"} -->
+<img src="https://github.com/langyixuan/Vanilla-Javascript-Project-Exercise/blob/master/Day_1/Recipe_App/img1.png" width="200px">
+<img src="https://github.com/langyixuan/Vanilla-Javascript-Project-Exercise/blob/master/Day_1/Recipe_App/img1.png" width="200px">
 
