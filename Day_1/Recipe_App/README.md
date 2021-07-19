@@ -17,8 +17,8 @@
 
 
 ### **页面展示**
-![Image](F:\前端各种笔记/medley/resources/rkS2xcG0__HkhvQ5z0d.png)
+![Image](https://github.com/langyixuan/Vanilla-Javascript-Project-Exercise/blob/master/Day_1/Recipe_App/img1.png)
 
-![Image](F:\前端各种笔记/medley/resources/rkS2xcG0__SkT2m9fAd.png)
+![Image](https://github.com/langyixuan/Vanilla-Javascript-Project-Exercise/blob/master/Day_1/Recipe_App/img2.png)
 
 
