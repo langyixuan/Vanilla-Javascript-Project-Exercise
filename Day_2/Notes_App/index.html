@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/marked/2.1.3/marked.min.js"></script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/granim/2.0.0/granim.min.js"></script>
+  <title>Notes App</title>
+</head>
+
+<body>
+  <div id="container">
+    <div class="notes-container">
+      <div id="sidebar">
+        <svg t="1626426553799" id="addbtn" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+          p-id="8023" width="30" height="30">
+          <path
+            d="M504.371937 16.445242c-277.781916 0-502.987991 225.187952-502.987991 502.973895 0 277.784936 225.206075 502.977923 502.987991 502.977923 277.782923 0 502.972888-225.192986 502.972888-502.977923C1007.343818 241.633194 782.15486 16.445242 504.371937 16.445242zM700.443161 562.04406 546.999881 562.04406l0 153.448315c0 18.833543-15.278277 34.104772-34.120882 34.104772-18.833543 0-34.077586-15.271229-34.077586-34.104772L478.801413 562.04406 325.334975 562.04406c-18.826495 0-34.103765-15.263174-34.103765-34.101751 0-18.824481 15.27727-34.096717 34.103765-34.096717l153.466438 0L478.801413 340.39325c0-18.826495 15.244044-34.092689 34.077586-34.092689 18.841598 0 34.120882 15.266195 34.120882 34.092689L546.999881 493.846599l153.44328 0c18.833543 0 34.101751 15.271229 34.101751 34.096717C734.544912 546.780886 719.276704 562.04406 700.443161 562.04406z"
+            p-id="8024" fill="#000000"></path>
+        </svg>
+        <ul class="color-list">
+          <li style="background-color: #28292B;"></li>
+          <li style="background-color: #ff5e62;"></li>
+          <li style="background-color: #05bd58;"></li>
+          <li style="background-color: #0575E6;"></li>
+          <li style="background-color: #674B7C;"></li>
+          <li style="background-color: #e79b0d;"></li>
+        </ul>
+      </div>
+      <div id="notes-bar">
+        <h1>My Notes</h1>
+        <div id="notes-box">
+          <h1>Nothing here </br>
+            Create a new note</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <canvas id="canvas-basic"></canvas>
+</body>
+
+</html>
