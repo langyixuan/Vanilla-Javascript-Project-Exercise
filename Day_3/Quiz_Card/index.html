@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
+  <title>Quiz Card</title>
+</head>
+
+<body>
+  <h1 class="title">JavaScript Quiz</h1>
+  <div class="container">
+    <h2 class="quiz_text">Question Text</h2>
+    <ul>
+      <li>
+        <input type="radio" id="a_1" name="selection">
+        <label for="a_1" class="a_text">Langyxiuan</label>
+        <svg width="20" height="20">
+          <polyline class="tick" points="4,9 8,13 14,5" />
+        </svg>
+      </li>
+      <li>
+        <input type="radio" id="a_2" name="selection">
+        <label for="a_2" class="b_text">Xiongshunrui</label>
+        <svg width="20" height="20">
+          <polyline class="tick" points="4,9 8,13 14,5" />
+        </svg>
+      </li>
+      <li>
+        <input type="radio" id="a_3" name="selection">
+        <label for="a_3" class="c_text">Lizhihong</label>
+        <svg width="20" height="20">
+          <polyline class="tick" points="4,9 8,13 14,5" />
+        </svg>
+      </li>
+      <li>
+        <input type="radio" id="a_4" name="selection">
+        <label for="a_4" class="d_text">Wangyifan</label>
+        <svg width="20" height="20">
+          <polyline class="tick" points="4,9 8,13 14,5" />
+        </svg>
+      </li>
+    </ul>
+    <div class="next">
+      <svg width="80" height="48">
+        <polyline class="nextline" points="21,27 57,27 47,17 57,27 47,37" />
+      </svg>
+    </div>
+    <div class="prev">
+      <svg width="80" height="48">
+        <polyline class="prevline" points="57,27 21,27 31,18 21,27 31,38" />
+      </svg>
+    </div>
+    <span class="correct_answer">
+      Check Answer
+    </span>
+  </div>
+</body>
+
+</html>
