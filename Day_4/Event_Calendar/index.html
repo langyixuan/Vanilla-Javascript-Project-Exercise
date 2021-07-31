@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src='script.js' defer></script>
+  <title>Event Calendar</title>
+</head>
+
+<body>
+  <div id="container">
+    <div id="box">
+      <div id="event">
+        <div id="today">
+          <div class="date"></div>
+          <span class="week"></span>
+        </div>
+
+        <div id="event_list">
+          <span>Today Events</span>
+          <ul>
+          </ul>
+        </div>
+        <div id="add_event">
+          <input type="text" placeholder="Create An Event">
+          <svg t="1627719632937" id="addBtn" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2026" width="20" height="20"><path d="M724.398 473.741h-174.14v-174.14c0-21.042-17.217-38.259-38.259-38.259s-38.259 17.216-38.259 38.259v174.14H299.6c-21.042 0-38.259 17.216-38.259 38.259 0 21.042 17.217 38.259 38.259 38.259h174.14v174.14c0 21.042 17.217 38.259 38.259 38.259s38.259-17.216 38.259-38.259v-174.14h174.14c21.042 0 38.259-17.216 38.259-38.259 0-21.042-17.217-38.259-38.259-38.259z" fill="#000000" p-id="2027"></path></svg>
+        </div>
+      </div>
+      <div id="calendar_box">
+        <div class="mask">
+          <div id="header">
+            <svg t="1627608807361" id="prev" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="53603" width="20" height="20"><path d="M629.291 840.832l60.331-60.331-268.501-268.501 268.501-268.501-60.331-60.331-328.832 328.832z" p-id="53604"></path></svg>
+            <h1 id="monthDisplay"></h1>
+            <svg t="1627608763201" id="next" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="53456" width="20" height="20"><path d="M689.621 512l-328.832-328.832-60.331 60.331 268.501 268.501-268.501 268.501 60.331 60.331z" p-id="53457"></path></svg>
+          </div>
+  
+          <div id="calendar">
+            <header id="weekends">
+              <span>SUN</span>
+              <span>MON</span>
+              <span>TUE</span>
+              <span>WED</span>
+              <span>THU</span>
+              <span>FRI</span>
+              <span>SAT</span>
+            </header>
+  
+            <div id="days">
+  
+            </div>
+        </div>
+
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

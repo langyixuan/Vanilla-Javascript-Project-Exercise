@@ -1,0 +1,232 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Tourney:wght@300&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@500&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+::-moz-placeholder { color: #000;  font-weight: 700;}
+::-webkit-input-placeholder { color:#000;  font-weight: 700;}
+:-ms-input-placeholder { color:#000; font-weight: 700;}
+
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  /*改变滚动条滑轨相关的样式*/
+  border-radius: 10px;
+  background-color: rgba(255,255,255, 0.3)
+}
+
+
+body {
+  /* font-family: 'Fredericka the Great', cursive; */
+  font-family: 'Exo', sans-serif;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(26, 26, 26);
+}
+
+#box {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  height: 80%;
+}
+
+#event {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 35%;
+  height: 100%;
+  padding: 40px 20px;
+  background-color: rgb(243, 238, 207);
+  border-radius: 1rem 0 0 1rem;
+}
+
+#event #today {
+  text-align: center;
+}
+
+#today .date {
+  width: 115px;
+  height: 115px;
+  line-height: 115px;
+  border-radius: 50%;
+  font-size: 80px;
+}
+
+#today .week {
+  font-weight: 700;
+}
+
+#event #add_event {
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#add_event input {
+  width: 100%;
+  border: 0;
+  outline: none;
+  border-bottom: 2px solid #000;
+  background-color: transparent;
+  font-family: inherit;
+  color: #000;
+  font-weight: 700;
+  padding: 8px 0;
+}
+
+#add_event svg {
+  cursor: pointer;
+}
+
+#event #event_list {
+  font-weight: 700;
+  width: 100%;
+  flex: 1;
+  padding: 20px;
+  margin-top: 20px;
+  overflow: auto;
+}
+
+#event_list ul {
+  padding: 20px 0;
+}
+
+#event_list ul li {
+  width: 100%;
+  height: 40px;
+  font-size: 10px;
+  position: relative;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  cursor: pointer;
+  list-style: none;
+  background-color: rgba(255,255,255,0.2);
+  border-radius: 5px;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+#event_list ul li input {
+  margin-right: 10px;
+  outline: none;
+}
+
+#event_list ul li span { 
+  width: 95%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#event_list ul li .delete-btn {
+  width: 5%;
+}
+
+
+#calendar_box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 65%;
+  height: 100%;
+  background-image: url(./summer.jpg);
+  background-size: cover;
+  padding: 40px 60px;
+  border-radius: 0 1rem 1rem 0;
+  transition: all 1s ease-in-out 
+}
+
+#calendar_box .mask {
+  background-color: rgba(255,255,255,0.5);
+}
+
+#calendar_box #header {
+  text-align: right;
+}
+
+#calendar_box svg {
+  cursor: pointer;
+}
+
+#header button, h1 {
+  display: inline-block;
+}
+
+#calendar_box #calendar {
+  flex: 1;
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+}
+
+#calendar #weekends {
+  display: flex;
+  justify-content: space-around;
+  font-weight: 700;
+}
+
+#weekends span {
+  flex: 1;
+  text-align: center;
+}
+
+#calendar #days {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+}
+
+#days .day {
+  text-align: center;
+  width: 14.28%;
+  height: 40px;
+  line-height: 40px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all .4s ease-in-out;
+}
+
+#days .day:hover {
+  color: #c48614;
+}
+
+.test {
+  position: relative;
+  width: 400px;
+  height: 50px;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 20px;
+  margin-bottom: 30px;
+}
